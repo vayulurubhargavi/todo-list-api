@@ -11,3 +11,109 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.App{
+   width:600px; 
+ 
+   background-color:rgb(242, 121, 121);
+   margin:30px auto ;
+   display: flex;
+   flex-direction: column;
+
+}
+
+.todo-bar-container{
+  height:10vh;
+  width:100%;
+  padding-top: 20px;
+
+}
+
+.todo-bar{
+  width:80%;
+  height:70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin:  auto;
+ 
+}
+ .icon-container{
+  height: 100%;
+  width:40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color:lightseagreen;
+   
+} 
+
+
+.todo-bar input{
+ width: 100%;
+ height: 100%;
+ border: 0px; 
+ padding: 0px 14px;
+ outline: none;
+
+}
+
+/* todo container */
+.todo-container{
+  width:100%;
+  /* overflow-y: scroll; */
+  display: grid;
+  place-items: center;
+}
+
+.todo-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* todo items styling */
+
+.todo-item
+{
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border:1px solid black;
+  border-radius: 4px;
+  margin: 5px 0px;
+  padding:10px 0px;
+  background-color: lightblue;
+}
+
+.tasks-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* styling the task title */
+.task-name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* setting the sizes to icons  */
+.todo-item i {
+  font-size: 1.2rem;
+}
+
+/* setting the padding and width between 2 divs*/
+.tasks-icon >div {
+  padding: 10px;
+  width: 300px;
+}
+
+/* setting margins to the icons inside todo item */
+.icons>i ,.tasks-icon>i {
+  margin: 0 5px;
+}
+
